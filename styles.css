@@ -1,4 +1,6 @@
 body {
+    color: white;
+    background-color: black;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,9 +9,20 @@ body {
 
 header {
     background: #000;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 50px 20px;
+    background: url(backgroundd.jpg) center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    animation: animateBackground 10s infinite alternate ease-in-out;
+    
 }
+@keyframes animateBackground {
+    0% { background-size: 100%; }
+    100% { background-size: 110%; }
+}
+
 
 .btn {
     background: #ff4500;
@@ -23,7 +36,8 @@ header {
 
 #services {
     padding: 50px 20px;
-    background: #f4f4f4;
+    background: #000000;
+    
 }
 
 .services-container {
